@@ -50,13 +50,3 @@ int binarySearch(int arr[], int num, int size)
     }
     return -1;
 }
-/* 3 , 5 , 7 , 9 , 12 , 34 , 45
-low     high    mid     size
-3       34      9       6
- check  9 > 3 || 9 < 45
- if 9 > 3
- 9-1 ( mid - 1) = high
- else
- mid + 1 = low
-
- */
