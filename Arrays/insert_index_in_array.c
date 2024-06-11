@@ -1,4 +1,3 @@
-// ek nyi index ko purane array me inter karwana
 
 #include <stdio.h>
 void triversalArray();
@@ -21,7 +20,7 @@ int main()
     return 0;
 }
 void triversalArray(int array[], int size)
-{ // for trivarse an array
+{
     for (int i = 0; i < size; i++)
         printf("%d\t", array[i]);
     printf("\n");
@@ -30,9 +29,7 @@ void triversalArray(int array[], int size)
 int insertIndex(int array[], int index, int element, int capacity, int size)
 {
     if (size >= capacity)
-    {
         return -1;
-    }
 
     for (int i = size - 1; i >= index; i--)
     {
