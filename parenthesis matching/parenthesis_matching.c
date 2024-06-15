@@ -83,7 +83,7 @@ int paranthisis_matching(char *exp)
                 return 0;
             }
             poped_element = pop(sp);
-            if (!match(poped_element, exp[i])) // agr ye dono match nhi krte h to 0 return ho jayega
+            if (!match(poped_element, exp[i])) 
             {
                 return 0;
             }
