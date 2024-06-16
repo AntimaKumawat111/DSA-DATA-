@@ -53,55 +53,33 @@ char pop(struct stack *sp)
     }
 }
 
-int match(char poped_element, char expi)
-{
-    if (poped_element == '{' && expi == '}')
-        return 1;
-    if (poped_element == '[' && expi == ']')
-        return 1;
-    if (poped_element == '(' && expi == ')')
-        return 1;
-
-    return 0;
-}
-
-int paranthisis_matching(char *exp)
+int matching(char *exp)
 {
     struct stack *sp;
     sp->size = 100;
     sp->top = -1;
     sp->arr = (char *)malloc(sp->size * sizeof(char));
-    char poped_element;
+
     for (int i = 0; exp[i] != '\0'; i++)
     {
-        if (exp[i] == '{' || exp[i] == '[' || exp[i] == '(')
-            push(sp, exp[i]);
-        else if (exp[i] == '}' || exp[i] == ']' || exp[i] == ')')
+        if (exp[i] == '(')
+            push(sp, '(');
+        else if (exp[i] == ')')
         {
             if (isEmpty(sp))
-            {
                 return 0;
-            }
-            poped_element = pop(sp);
-            if (!match(poped_element, exp[i])) 
-            {
-                return 0;
-            }
+            pop(sp);
         }
     }
     if (isEmpty(sp))
         return 1;
     return 0;
 }
-
 int main()
 {
-    char *exp = "{3 + 7 [4 - 6 (2 *2 ) * 10 {2+3}]";
-
-    if (paranthisis_matching(exp))
-        printf("Balanced \n");
+    char *exp = "((2+3))";
+    if (matching(exp))
+        printf("Matching\n");
     else
-        printf("Not Balanced\n");
-
-        return 0 ;
+        printf("Not Matching\n");
 }
