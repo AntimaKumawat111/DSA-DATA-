@@ -77,7 +77,7 @@ int matching(char *exp)
 }
 int main()
 {
-    char *exp = "((2+3))";
+    char *exp = "(2+3))";
     if (matching(exp))
         printf("Matching\n");
     else
