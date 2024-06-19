@@ -2,12 +2,12 @@ This repository contains implementations of various linked list  operations in C
 
 Table of Contents
 
- - Circuler Linklist
- - Deletion at First in LinkList
- - Deletion at Last
- - Deletion In Between In LinkList
- - Doubly LinkList
+ - Circuler Linked list
+ - Deletion at First in Linked List
+ - Deletion at Last in Linked List
+ - Deletion In Between In Linked List
+ - Doubly LinkedList
  - Insertion After a node
- - Insertion at Last
- - Insertion in Between in LinkedList
+ - Insertion at Last in Linked List
+ - Insertion in Between in Linked List
 
