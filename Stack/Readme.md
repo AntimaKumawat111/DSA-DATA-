@@ -6,6 +6,7 @@ This repository contains implementations of a stack using an array, along with p
 
 1. Implementing stack using array 
 2. Push and Pop operations in stack using array
+3. Peek operation in stack in an array
 
 
 ## Future Additions
