@@ -9,11 +9,12 @@ This directory contains various implementations of the queue data structure. A q
 - **File:** `implementing_queue_using_array.c`
 - **Description:** This file contains a C program that demonstrates how to implement a queue using a fixed-size array.
 
+- **File:** `enqueue_operation.c`
+- **File:** `dequeue_operation.c`
 
 ## Future Implementations
 
 We plan to add more implementations of the queue data structure using different approaches and languages. 
-
 
 ## Contact
 
