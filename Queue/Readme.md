@@ -11,11 +11,12 @@ This directory contains various implementations of the queue data structure. A q
 
 - **File:** `enqueue_operation.c`
 - **File:** `dequeue_operation.c`
+- **File:** `queue_using_linked_list`
+
 
 ## Future Implementations
 
 We plan to add more implementations of the queue data structure using different approaches and languages. 
-
 ## Contact
 
 If you have any questions or suggestions, feel free to open an issue or contact me at 
