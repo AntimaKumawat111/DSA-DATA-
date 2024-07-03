@@ -19,7 +19,7 @@ void triverLinkedList(struct node *ptr)
         ptr = ptr->next;
     }
 }
-
+    
 void enqueue(int data)
 {
     struct node *ptr = (struct node *)malloc(sizeof(int));
