@@ -8,7 +8,7 @@ This repository contains implementations of a stack using an array, along with p
 2. Push and Pop operations in stack using array
 3. Peek operation in stack in an array
 4. Implementing stack using linkedlist
-
+5. Infix to postfix using stack
 
 ## Future Additions
 
