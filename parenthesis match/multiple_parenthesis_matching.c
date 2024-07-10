@@ -6,6 +6,7 @@ struct stack
     int top;
     char *arr;
 };
+
 int isEmpty(struct stack *sp)
 {
     if (sp->top < 0)
